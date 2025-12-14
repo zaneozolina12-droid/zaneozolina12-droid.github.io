@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stairs Gallery – MP Power Bygg</title>
+
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+        font-family: "Inter", Arial, sans-serif;
+        background: #fafafa;
+        color: #222;
+    }
+
+    .logo {
+        position: absolute;
+        top: 20px;
+        left: 50px;
+        font-size: 32px;
+        font-weight: 800;
+    }
+    .logo span { color: orange; }
+
+    .nav {
+        position: absolute;
+        top: 25px;
+        right: 60px;
+        display: flex;
+        gap: 25px;
+    }
+    .nav a {
+        padding: 8px 18px;
+        border-radius: 12px;
+        font-size: 17px;
+        font-weight: 600;
+        text-decoration: none;
+        color: #2d2d2d;
+        background: rgba(255, 255, 255, 0.45);
+        border: 1px solid rgba(255, 255, 255, 0.35);
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+        transition: 0.25s ease;
+    }
+    .nav a:hover { transform: translateY(-2px); }
+
+    .page-wrapper {
+        max-width: 1200px;
+        margin: 160px auto 60px;
+        padding: 0 20px 60px;
+    }
+
+    h1 {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+    .subtitle {
+        margin-bottom: 25px;
+        color: #666;
+    }
+
+    .back-btn {
+        display: inline-block;
+        margin-bottom: 25px;
+        padding: 8px 16px;
+        border-radius: 999px;
+        border: none;
+        text-decoration: none;
+        background: #fff;
+        color: #222;
+        font-weight: 600;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+        transition: 0.2s ease;
+    }
+    .back-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 16px rgba(0,0,0,0.18);
+    }
+
+    .grid {
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 20px;
+    }
+    .grid img {
+        width: 100%;
+        border-radius: 14px;
+        object-fit: cover;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+        transition: 0.25s ease;
+    }
+    .grid img:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 24px rgba(0,0,0,0.28);
+    
+    }
+
+@media (max-width: 900px) {
+
+    .logo {
+        top: 10px;
+        left: 16px;
+        font-size: 22px;      
+        line-height: 1.1;
+    }
+
+    .nav {
+        top: 12px;
+        right: 12px;
+        gap: 8px;
+        flex-wrap: wrap;      
+        justify-content: flex-end;
+    }
+
+    .nav a {
+        font-size: 13px;
+        padding: 6px 10px;
+        border-radius: 10px;
+    }
+
+   
+    .page-wrapper,
+    .services-section,
+    .gallery-section {
+        margin-top: 120px;
+        padding: 0 16px 40px;
+    }
+
+
+    .services-layout {
+        grid-template-columns: 1fr;  
+        gap: 30px;
+        border-left: 0;
+    }
+    .services-right {
+        border-left: none;
+        padding-left: 0;
+    }
+
+    .gallery-menu {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .bubble {
+        width: 140px;
+        height: 140px;
+    }
+
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .lang-switch {
+        top: 60px;
+        right: 16px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<h1 class="logo">M<span>P</span> Power Bygg</h1>
+
+<div class="nav">
+    <a href="index.html">Home</a>
+    <a href="services-en.html">Services</a>
+    <a href="gallery.html">Gallery</a>
+        <a href="contact-en.html" > Contacts</a>
+</div>
+
+<div class="page-wrapper">
+    <a href="gallery.html" class="back-btn">← Back to gallery</a>
+
+    <h1>Stairs</h1>
+    <p class="subtitle">Examples of custom staircases and stair renovations.</p>
+
+    <div class="grid">
+        <img src="s.jpg"  alt="Stairs 1">
+        <img src="s2.jpg" alt="Stairs 2">
+        <img src="s3.jpg" alt="Stairs 3">
+        <img src="s4.jpg" alt="Stairs 4">
+        <img src="s5.jpg" alt="Stairs 5">
+        <img src="s6.jpg" alt="Stairs 6">
+        <img src="s7.jpg" alt="Stairs 7">
+        <img src="s8.jpg" alt="Stairs 8">
+        <img src="s9.jpg" alt="Stairs 9">
+        <img src="s10.jpg" alt="Stairs 10">
+        <img src="s11.jpg" alt="Stairs 11">
+        <img src="s12.jpg" alt="Stairs 12">
+    </div>
+</div>
+
+</body>
+</html>

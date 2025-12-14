@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MP Power Bygg – Gallery</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Inter", Arial, sans-serif;
+            background-color: #fafafa;
+            color: #222;
+        }
+
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 50px;
+            font-size: 32px;
+            font-weight: 800;
+        }
+        .logo span {
+            color: orange;
+        }
+
+      
+        .nav {
+            position: absolute;
+            top: 25px;
+            right: 60px;
+            display: flex;
+            gap: 25px;
+        }
+        .nav a {
+            padding: 8px 18px;
+            border-radius: 12px;
+            font-size: 17px;
+            font-weight: 600;
+            text-decoration: none;
+            color: #2d2d2d;
+            background: rgba(255, 255, 255, 0.45);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.35);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+            transition: 0.25s ease;
+        }
+        .nav a:hover {
+            transform: translateY(-2px);
+            background: rgba(255, 255, 255, 0.65);
+        }
+
+        .gallery-section {
+            max-width: 1100px;
+            margin: 180px; 
+            padding: 0 20px;
+        }
+
+        .gallery-menu {
+            display: flex;
+            justify-content: center;    
+            gap: 60px;                    
+            flex-wrap: nowrap;             
+        }
+
+        .gallery-item {
+            text-decoration: none;
+            color: inherit;
+            text-align: center;
+        }
+
+        .bubble {
+            width: 180px;                  /* bigger */
+            height: 180px;
+            border-radius: 50%;
+            background: white;
+            box-shadow: 0 10px 22px rgba(0,0,0,0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;              
+            transition: 0.25s ease;
+        }
+
+        .bubble img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;            
+        }
+
+        .bubble:hover {
+            transform: scale(1.05);
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25);
+        }
+
+        .label {
+            margin-top: 12px;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+     
+@media (max-width: 900px) {
+
+    .logo {
+        top: 10px;
+        left: 16px;
+        font-size: 22px;      
+        line-height: 1.1;
+    }
+
+    .nav {
+        top: 12px;
+        right: 12px;
+        gap: 8px;
+        flex-wrap: wrap;     
+        justify-content: flex-end;
+    }
+
+    .nav a {
+        font-size: 13px;
+        padding: 6px 10px;
+        border-radius: 10px;
+    }
+
+   
+    .page-wrapper,
+    .services-section,
+    .gallery-section {
+        margin-top: 120px;
+        padding: 0 16px 40px;
+    }
+
+
+    .services-layout {
+        grid-template-columns: 1fr;  
+        gap: 30px;
+        border-left: 0;
+    }
+    .services-right {
+        border-left: none;
+        padding-left: 0;
+    }
+
+
+    .gallery-menu {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .bubble {
+        width: 140px;
+        height: 140px;
+    }
+
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .lang-switch {
+        top: 60px;
+        right: 16px;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+    <h1 class="logo">M<span>P</span> Power Bygg</h1>
+
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="services-en.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact-en.html" > Contacts</a>
+    </div>
+
+    <section class="gallery-section">
+        <div class="gallery-menu">
+
+      
+            <a class="gallery-item" href="stairs.html">
+                <div class="bubble">
+                    <img src="s5.jpg" alt="Stairs">
+                </div>
+                <div class="label">Stairs</div>
+            </a>
+
+         
+            <a class="gallery-item" href="kitchen.html">
+                <div class="bubble">
+                    <img src="k.jpg" alt="Kitchen">
+                </div>
+                <div class="label">Kitchen</div>
+            </a>
+
+      
+            <a class="gallery-item" href="roof.html">
+                <div class="bubble">
+                    <img src="r.jpg" alt="Roofs">
+                </div>
+                <div class="label">Roofs</div>
+            </a>
+
+         
+            <a class="gallery-item" href="other.html">
+                <div class="bubble">
+                    <img src="o2.jpg" alt="Other">
+                </div>
+                <div class="label">Other</div>
+            </a>
+
+        </div>
+    </section>
+
+</body>
+</html>

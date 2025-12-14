@@ -4,16 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MP Power Bygg</title>
+
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
+
         body {
             font-family: Arial, sans-serif;
             background-color: #ffffff;
         }
+
+        /* HERO AREA */
         .hero {
             position: relative;
             height: 100vh;
@@ -25,6 +29,7 @@
             padding-left: 10%;
             text-align: left;
         }
+
         .overlay {
             position: absolute;
             top: 0;
@@ -34,44 +39,122 @@
             background: rgba(255, 255, 255, 0.9);
             clip-path: polygon(0 0, 75% 0, 40% 100%, 0% 100%);
         }
+
+        /* LOGO */
         .logo {
             position: absolute;
             top: 30%;
             left: 40%;
             font-size: 60px;
             font-weight: bold;
-            color: rgb(0, 0, 0);
+            color: #000;
             z-index: 2;
+            line-height: 1.05;
         }
+
         .logo span {
             color: orange;
         }
+
+        /* NAV BAR */
         .nav {
             position: absolute;
-            top: 20px;
-            right: 50px;
+            top: 25px;
+            right: 60px;
+            display: flex;
+            gap: 25px;
+            z-index: 3;
         }
+
         .nav a {
-            margin: 0 15px;
+            padding: 8px 18px;
+            border-radius: 12px;
+            font-size: 17px;
+            font-weight: 600;
             text-decoration: none;
-            color: rgb(219, 215, 215);
-            font-size: 18px;
-            font-weight: bold;
-            background-color: rgba(112, 103, 103, 0.7);
-            padding: 5px 10px;
-            border-radius: 5px;
+            color: #2d2d2d;
+
+            background: rgba(255, 255, 255, 0.45);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+
+            border: 1px solid rgba(255, 255, 255, 0.35);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+
+            transition: 0.25s ease;
         }
+
+        .nav a:hover {
+            transform: translateY(-2px);
+            background: rgba(255, 255, 255, 0.65);
+            box-shadow: 0 5px 14px rgba(0, 0, 0, 0.25);
+        }
+
+       @media (max-width: 900px) {
+
+    
+    .hero {
+        height: 100vh;
+        clip-path: none;
+        padding: 0 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;      
+        align-items: center;         
+    }
+
+    .overlay {
+        clip-path: none;
+        background: rgba(255, 255, 255, 0.9);
+    }
+
+    
+    .nav {
+        position: absolute;
+        top: 16px;
+        left: 0;
+        right: 0;
+        justify-content: center;
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+
+    .nav a {
+        font-size: 13px;
+        padding: 6px 10px;
+        border-radius: 10px;
+    }
+
+    
+    .logo {
+        position: static;          
+        font-size: 32px;
+        text-align: center;
+        line-height: 1.1;
+        margin-top: 40px;          
+        z-index: 2;
+    }
+}
+
+          
     </style>
 </head>
 <body>
     <div class="hero">
         <div class="overlay"></div>
+
         <div class="nav">
-            <a href="Info.html">Services</a>
-            <a href='Gallery.html'>Gallery</a>
-            <a href='Contacts.php' >contact us</a>
+            <a href="index.html">Home</a>
+            <a href="services-en.html">Services</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact-en.html">Contacts</a>
         </div>
-        <div class="logo">M<span>P</span> <br> Power <br> Bygg</div>
+
+        <div class="logo">
+            M<span>P</span><br>
+            Power<br>
+            Bygg
+        </div>
     </div>
 </body>
 </html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MP Power Bygg – Services</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Inter", Arial, sans-serif;
+            background-color: #fafafa;
+            color: #222;
+        }
+
+        
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 50px;
+            font-size: 32px;
+            font-weight: 800;
+        }
+        .logo span {
+            color: orange;
+        }
+
+        .hero {
+            position: relative;
+            height: 130px;
+        }
+
+        .nav {
+            position: absolute;
+            top: 25px;
+            right: 60px;
+            display: flex;
+            gap: 25px;
+        }
+        .nav a {
+            padding: 8px 18px;
+            border-radius: 12px;
+            font-size: 17px;
+            font-weight: 600;
+            text-decoration: none;
+            color: #2d2d2d;
+            background: rgba(255, 255, 255, 0.45);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.35);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+            transition: 0.25s ease;
+        }
+        .nav a:hover {
+            transform: translateY(-2px);
+            background: rgba(255, 255, 255, 0.65);
+        }
+
+        .lang-switch {
+            position: absolute;
+            top: 80px;
+            right: 60px;
+            display: flex;
+            gap: 10px;
+        }
+        .lang-switch img.flag {
+            width: 34px;
+            height: auto;
+            border-radius: 6px;
+            object-fit: cover;
+            transition: 0.2s ease;
+        }
+        .lang-switch img.flag:hover {
+            transform: scale(1.08);
+            background: #eee;
+        }
+        .lang-switch a.active img.flag {
+            outline: 2px solid #7d7979;
+        }
+
+        .services-section {
+            max-width: 1100px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+        .services-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: start;
+        }
+
+        .services-left {
+            margin-top: -20px;
+        }
+        .services-left h2 {
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        .services-left p {
+            font-size: 18px;
+            line-height: 1.7;
+            color: #555;
+            margin-bottom: 14px;
+        }
+
+        .services-right {
+            border-left: 1px solid #8b8b8b;
+            padding-left: 40px;
+        }
+        .services-right ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .services-right li {
+            font-size: 18px;
+            margin-bottom: 16px;
+            padding-left: 20px;
+            position: relative;
+        }
+        .services-right li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 22px;
+        }
+
+@media (max-width: 900px) {
+
+    .logo {
+        top: 10px;
+        left: 16px;
+        font-size: 22px;      /* smaller logo on small screens */
+        line-height: 1.1;
+    }
+
+    .nav {
+        top: 12px;
+        right: 12px;
+        gap: 8px;
+        flex-wrap: wrap;      /* allow buttons to wrap to two lines */
+        justify-content: flex-end;
+    }
+
+    .nav a {
+        font-size: 13px;
+        padding: 6px 10px;
+        border-radius: 10px;
+    }
+
+    /* Give page content a bit more space under header */
+    .page-wrapper,
+    .services-section,
+    .gallery-section {
+        margin-top: 120px;
+        padding: 0 16px 40px;
+    }
+
+
+
+    .services-layout {
+        grid-template-columns: 1fr;  
+        gap: 30px;
+        border-left: 0;
+    }
+    .services-right {
+        border-left: none;
+        padding-left: 0;
+    }
+
+    .gallery-menu {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .bubble {
+        width: 140px;
+        height: 140px;
+    }
+
+   
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .lang-switch {
+        top: 60px;
+        right: 16px;
+    }
+}
+
+    </style>
+</head>
+
+<body>
+
+    <div class="hero">
+        <h1 class="logo">M<span>P</span> Power Bygg</h1>
+
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="services-en.html">Services</a>
+            <a href="gallery.html">Gallery</a>
+             <a href="contact-en.html" > Contacts</a>
+        </div>
+
+        <div class="lang-switch">
+            <a href="services-en.html" class="active">
+                <img class="flag" src="flag-en.png" alt="English">
+            </a>
+            <a href="services-sv.html">
+                <img class="flag" src="flag-se.png" alt="Svenska">
+            </a>
+        </div>
+    </div>
+
+    <section class="services-section">
+        <div class="services-layout">
+
+            <div class="services-left">
+                <h2>Renovation & installation services</h2>
+                <p>
+                    At MP Power Bygg AB, we specialize in professional renovation and installation
+                    services tailored to your home's needs. With years of experience and a commitment
+                    to quality, we deliver results that combine functionality, durability, and modern design.
+                </p>
+                <p>
+                    Our team works with trusted materials and reliable craftsmanship to ensure every
+                    project meets the highest standards whether it’s a small upgrade or a full renovation.
+                </p>
+            </div>
+
+            <div class="services-right">
+                <ul>
+                    <li>Kitchen installation and assembly</li>
+                    <li>Door installation (interior & exterior)</li>
+                    <li>Floor installation (wood, laminate, vinyl)</li>
+                    <li>Wardrobes and built-in closets</li>
+                    <li>Cabinets and custom storage solutions</li>
+                    <li>General home improvements and carpentry work</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>
